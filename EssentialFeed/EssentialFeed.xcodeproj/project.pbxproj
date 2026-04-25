@@ -70,40 +70,723 @@
 /* Begin PBXFileReference section */
 		C1417E102E76FD210026ACEB /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14BA59A2EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B74EF42F9D5F1C001D8C9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74EF82F9D5F37001D8C9F /* _Testing_UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_UIKit.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/_Testing_UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74EF92F9D5F37001D8C9F /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F062F9D5F61001D8C9F /* _Testing_Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_Foundation.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/_Testing_Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F072F9D5F61001D8C9F /* _Testing_AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_AppKit.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/_Testing_AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F172F9D5F87001D8C9F /* _Testing_CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/_Testing_CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F1B2F9D5F98001D8C9F /* _Testing_UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/_Testing_UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F1C2F9D5F98001D8C9F /* _Testing_Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/_Testing_Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F1D2F9D5F98001D8C9F /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
+		C1B74F1E2F9D5F98001D8C9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CDB11A2E5A3163007AF2D2 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D022A22EE4DAA4003EEF59 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D022AC2EE4DAA4003EEF59 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C1B7500E2F9D623A001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.swift,
+			);
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+		};
+		C1B7500F2F9D623D001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedAPIEndToEndTests.swift,
+				"RemoteFeedLoader+Helpers.swift",
+			);
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+		};
+		C1B750102F9D6245001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.docc,
+				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedUIComposer.swift,
+				FeedUI/Composers/FeedViewAdapter.swift,
+				FeedUI/Composers/MainQueueDispatchDecorator.swift,
+				FeedUI/Composers/WeakRefVirtualProxy.swift,
+				FeedUI/Controllers/FeedImageCellController.swift,
+				FeedUI/Controllers/FeedViewController.swift,
+				FeedUI/Views/ErrorView.swift,
+				FeedUI/Views/Feed.storyboard,
+				FeedUI/Views/Feed.xcassets,
+				FeedUI/Views/FeedImageCell.swift,
+				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
+				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
+				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
+			);
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+		};
+		C1B750112F9D6250001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.xctestplan,
+				"Feed UI/FeedUIIntegrationTests.swift",
+				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
+				"Feed UI/Helpers/FeedViewController+Helpers.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
+				"Feed UI/Helpers/UIButton+TestHelpers.swift",
+				"Feed UI/Helpers/UIImage+TestHelpers.swift",
+				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
+			);
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+		};
+		C1B7502B2F9D62D4001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.swift,
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C1B7502C2F9D62D4001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: FeedPresentation/Feed.strings",
+				EssentialFeed.docc,
+				EssentialFeed.swift,
+				FeedAPI/FeedItemsMapper.swift,
+				"FeedAPI/Helpers/HTTPURLResponse+StatusCode.swift",
+				FeedAPI/HTTPClient.swift,
+				FeedAPI/RemoteFeedImageDataLoader.swift,
+				FeedAPI/RemoteFeedItem.swift,
+				FeedAPI/RemoteFeedLoader.swift,
+				FeedAPI/URLSessionHTTPClient.swift,
+				FeedCache/FeedCachePolicy.swift,
+				FeedCache/FeedImageDataStore.swift,
+				FeedCache/FeedStore.swift,
+				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
+				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
+				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
+				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
+				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
+				FeedCache/LocalFeedImage.swift,
+				FeedCache/LocalFeedImageDataLoader.swift,
+				FeedCache/LocalFeedLoader.swift,
+				FeedFeature/FeedImage.swift,
+				FeedFeature/FeedImageDataLoader.swift,
+				FeedFeature/FeedLoader.swift,
+				FeedPresentation/FeedErrorViewModel.swift,
+				FeedPresentation/FeedImagePresenter.swift,
+				FeedPresentation/FeedImageViewModel.swift,
+				FeedPresentation/FeedLoadingViewModel.swift,
+				FeedPresentation/FeedPresenter.swift,
+				FeedPresentation/FeedViewModel.swift,
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C1B7502D2F9D62E2001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.docc,
+				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedUIComposer.swift,
+				FeedUI/Composers/FeedViewAdapter.swift,
+				FeedUI/Composers/MainQueueDispatchDecorator.swift,
+				FeedUI/Composers/WeakRefVirtualProxy.swift,
+				FeedUI/Controllers/FeedImageCellController.swift,
+				FeedUI/Controllers/FeedViewController.swift,
+				FeedUI/Views/ErrorView.swift,
+				FeedUI/Views/Feed.storyboard,
+				FeedUI/Views/Feed.xcassets,
+				FeedUI/Views/FeedImageCell.swift,
+				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
+				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
+				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C1B7502E2F9D62EF001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.xctestplan,
+				"Feed UI/FeedUIIntegrationTests.swift",
+				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
+				"Feed UI/Helpers/FeedViewController+Helpers.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
+				"Feed UI/Helpers/UIButton+TestHelpers.swift",
+				"Feed UI/Helpers/UIImage+TestHelpers.swift",
+				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C1B7502F2F9D62F0001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CI_iOS.xctestplan,
+				CI_macOS.xctestplan,
+				EssentialFeed.xctestplan,
+				EssentialFeedAPIEndToEndTests.xctestplan,
+				EssentialFeedCacheIntegrationTests.xctestplan,
+				FeedAPI/Helpers/HTTPClientSpy.swift,
+				FeedAPI/Helpers/URLProtocolStub.swift,
+				"FeedAPI/Helpers/URLSessionHTTPClient+Helpers.swift",
+				FeedAPI/LoadFeedFromRemoteUseCaseTests.swift,
+				FeedAPI/LoadFeedImageDataFromRemoteUseCaseTests.swift,
+				FeedAPI/URLSessionHTTPClientTests.swift,
+				FeedCache/CacheFeedImageDataUseCaseTests.swift,
+				FeedCache/CacheFeedUseCaseTests.swift,
+				FeedCache/CoreDataFeedImageDataStoreTests.swift,
+				FeedCache/CoreDataFeedStoreTests.swift,
+				FeedCache/FeedStoreSpecs.swift,
+				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
+				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
+				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
+				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
+				FeedCache/ValidateFeedCacheUseCaseTests.swift,
+				FeedPresentation/FeedLocalizationTests.swift,
+				FeedPresentation/FeedPresenterTests.swift,
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C1B750302F9D631B001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: FeedPresentation/Feed.strings",
+				EssentialFeed.docc,
+				EssentialFeed.swift,
+				FeedAPI/FeedItemsMapper.swift,
+				"FeedAPI/Helpers/HTTPURLResponse+StatusCode.swift",
+				FeedAPI/HTTPClient.swift,
+				FeedAPI/RemoteFeedImageDataLoader.swift,
+				FeedAPI/RemoteFeedItem.swift,
+				FeedAPI/RemoteFeedLoader.swift,
+				FeedAPI/URLSessionHTTPClient.swift,
+				FeedCache/FeedCachePolicy.swift,
+				FeedCache/FeedImageDataStore.swift,
+				FeedCache/FeedStore.swift,
+				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
+				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
+				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
+				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
+				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
+				FeedCache/LocalFeedImage.swift,
+				FeedCache/LocalFeedImageDataLoader.swift,
+				FeedCache/LocalFeedLoader.swift,
+				FeedFeature/FeedImage.swift,
+				FeedFeature/FeedImageDataLoader.swift,
+				FeedFeature/FeedLoader.swift,
+				FeedPresentation/FeedErrorViewModel.swift,
+				FeedPresentation/FeedImagePresenter.swift,
+				FeedPresentation/FeedImageViewModel.swift,
+				FeedPresentation/FeedLoadingViewModel.swift,
+				FeedPresentation/FeedPresenter.swift,
+				FeedPresentation/FeedViewModel.swift,
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
+		};
+		C1B750312F9D631D001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedAPIEndToEndTests.swift,
+				"RemoteFeedLoader+Helpers.swift",
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
+		};
+		C1B750322F9D6323001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.docc,
+				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedUIComposer.swift,
+				FeedUI/Composers/FeedViewAdapter.swift,
+				FeedUI/Composers/MainQueueDispatchDecorator.swift,
+				FeedUI/Composers/WeakRefVirtualProxy.swift,
+				FeedUI/Controllers/FeedImageCellController.swift,
+				FeedUI/Controllers/FeedViewController.swift,
+				FeedUI/Views/ErrorView.swift,
+				FeedUI/Views/Feed.storyboard,
+				FeedUI/Views/Feed.xcassets,
+				FeedUI/Views/FeedImageCell.swift,
+				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
+				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
+				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
+		};
+		C1B750332F9D632D001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.xctestplan,
+				"Feed UI/FeedUIIntegrationTests.swift",
+				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
+				"Feed UI/Helpers/FeedViewController+Helpers.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
+				"Feed UI/Helpers/UIButton+TestHelpers.swift",
+				"Feed UI/Helpers/UIImage+TestHelpers.swift",
+				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
+		};
+		C1B750342F9D632E001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CI_iOS.xctestplan,
+				CI_macOS.xctestplan,
+				EssentialFeed.xctestplan,
+				EssentialFeedAPIEndToEndTests.xctestplan,
+				FeedAPI/Helpers/HTTPClientSpy.swift,
+				FeedAPI/Helpers/URLProtocolStub.swift,
+				"FeedAPI/Helpers/URLSessionHTTPClient+Helpers.swift",
+				FeedAPI/LoadFeedFromRemoteUseCaseTests.swift,
+				FeedAPI/LoadFeedImageDataFromRemoteUseCaseTests.swift,
+				FeedAPI/URLSessionHTTPClientTests.swift,
+				FeedCache/CacheFeedImageDataUseCaseTests.swift,
+				FeedCache/CacheFeedUseCaseTests.swift,
+				FeedCache/CoreDataFeedImageDataStoreTests.swift,
+				FeedCache/CoreDataFeedStoreTests.swift,
+				FeedCache/FeedStoreSpecs.swift,
+				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
+				FeedCache/Helpers/FeedStoreSpy.swift,
+				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
+				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
+				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
+				FeedCache/ValidateFeedCacheUseCaseTests.swift,
+				FeedPresentation/FeedLocalizationTests.swift,
+				FeedPresentation/FeedPresenterTests.swift,
+				Helpers/LeakChecker.swift,
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
+		};
+		C1B750352F9D634E001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeediOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.swift,
+			);
+			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
+		};
+		C1B750362F9D634E001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeediOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: FeedPresentation/Feed.strings",
+				EssentialFeed.docc,
+				EssentialFeed.swift,
+				FeedAPI/FeedItemsMapper.swift,
+				"FeedAPI/Helpers/HTTPURLResponse+StatusCode.swift",
+				FeedAPI/HTTPClient.swift,
+				FeedAPI/RemoteFeedImageDataLoader.swift,
+				FeedAPI/RemoteFeedItem.swift,
+				FeedAPI/RemoteFeedLoader.swift,
+				FeedAPI/URLSessionHTTPClient.swift,
+				FeedCache/FeedCachePolicy.swift,
+				FeedCache/FeedImageDataStore.swift,
+				FeedCache/FeedStore.swift,
+				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
+				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
+				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
+				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
+				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
+				FeedCache/LocalFeedImage.swift,
+				FeedCache/LocalFeedImageDataLoader.swift,
+				FeedCache/LocalFeedLoader.swift,
+				FeedFeature/FeedImage.swift,
+				FeedFeature/FeedImageDataLoader.swift,
+				FeedFeature/FeedLoader.swift,
+				FeedPresentation/FeedErrorViewModel.swift,
+				FeedPresentation/FeedImagePresenter.swift,
+				FeedPresentation/FeedImageViewModel.swift,
+				FeedPresentation/FeedLoadingViewModel.swift,
+				FeedPresentation/FeedPresenter.swift,
+				FeedPresentation/FeedViewModel.swift,
+			);
+			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
+		};
+		C1B750372F9D6350001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeediOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedAPIEndToEndTests.swift,
+				"RemoteFeedLoader+Helpers.swift",
+			);
+			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
+		};
+		C1B750382F9D6362001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeediOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.xctestplan,
+				"Feed UI/FeedUIIntegrationTests.swift",
+				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
+				"Feed UI/Helpers/FeedViewController+Helpers.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
+				"Feed UI/Helpers/UIButton+TestHelpers.swift",
+				"Feed UI/Helpers/UIImage+TestHelpers.swift",
+				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
+			);
+			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
+		};
+		C1B750392F9D6363001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CI_iOS.xctestplan,
+				CI_macOS.xctestplan,
+				EssentialFeed.xctestplan,
+				EssentialFeedAPIEndToEndTests.xctestplan,
+				EssentialFeedCacheIntegrationTests.xctestplan,
+				FeedAPI/Helpers/HTTPClientSpy.swift,
+				FeedAPI/Helpers/URLProtocolStub.swift,
+				"FeedAPI/Helpers/URLSessionHTTPClient+Helpers.swift",
+				FeedAPI/LoadFeedFromRemoteUseCaseTests.swift,
+				FeedAPI/LoadFeedImageDataFromRemoteUseCaseTests.swift,
+				FeedAPI/URLSessionHTTPClientTests.swift,
+				FeedCache/CacheFeedImageDataUseCaseTests.swift,
+				FeedCache/CacheFeedUseCaseTests.swift,
+				FeedCache/CoreDataFeedImageDataStoreTests.swift,
+				FeedCache/CoreDataFeedStoreTests.swift,
+				FeedCache/FeedStoreSpecs.swift,
+				FeedCache/Helpers/FeedCacheTestHelpers.swift,
+				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
+				FeedCache/Helpers/FeedStoreSpy.swift,
+				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
+				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
+				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
+				FeedCache/ValidateFeedCacheUseCaseTests.swift,
+				FeedPresentation/FeedLocalizationTests.swift,
+				FeedPresentation/FeedPresenterTests.swift,
+				Helpers/LeakChecker.swift,
+				Helpers/SharedTestHelpers.swift,
+				"Helpers/XCTestCase+MemoryLeakTracking.swift",
+			);
+			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
+		};
+		C1B7503D2F9D6399001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeediOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.docc,
+				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedUIComposer.swift,
+				FeedUI/Composers/FeedViewAdapter.swift,
+				FeedUI/Composers/MainQueueDispatchDecorator.swift,
+				FeedUI/Composers/WeakRefVirtualProxy.swift,
+				FeedUI/Controllers/FeedImageCellController.swift,
+				FeedUI/Controllers/FeedViewController.swift,
+				FeedUI/Views/ErrorView.swift,
+				FeedUI/Views/Feed.storyboard,
+				FeedUI/Views/Feed.xcassets,
+				FeedUI/Views/FeedImageCell.swift,
+				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
+				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
+				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
+			);
+			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
+		};
+		C1B7503F2F9D639A001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CI_iOS.xctestplan,
+				CI_macOS.xctestplan,
+				EssentialFeed.xctestplan,
+				EssentialFeedAPIEndToEndTests.xctestplan,
+				EssentialFeedCacheIntegrationTests.xctestplan,
+				FeedAPI/Helpers/HTTPClientSpy.swift,
+				FeedAPI/Helpers/URLProtocolStub.swift,
+				"FeedAPI/Helpers/URLSessionHTTPClient+Helpers.swift",
+				FeedAPI/LoadFeedFromRemoteUseCaseTests.swift,
+				FeedAPI/LoadFeedImageDataFromRemoteUseCaseTests.swift,
+				FeedAPI/URLSessionHTTPClientTests.swift,
+				FeedCache/CacheFeedImageDataUseCaseTests.swift,
+				FeedCache/CacheFeedUseCaseTests.swift,
+				FeedCache/CoreDataFeedImageDataStoreTests.swift,
+				FeedCache/CoreDataFeedStoreTests.swift,
+				FeedCache/FeedStoreSpecs.swift,
+				FeedCache/Helpers/FeedCacheTestHelpers.swift,
+				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
+				FeedCache/Helpers/FeedStoreSpy.swift,
+				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
+				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
+				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
+				FeedCache/ValidateFeedCacheUseCaseTests.swift,
+				FeedPresentation/FeedLocalizationTests.swift,
+				FeedPresentation/FeedPresenterTests.swift,
+				Helpers/LeakChecker.swift,
+				Helpers/SharedTestHelpers.swift,
+			);
+			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
+		};
+		C1B750402F9D639A001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeediOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.swift,
+			);
+			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
+		};
+		C1B750412F9D639A001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeediOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedAPIEndToEndTests.swift,
+				"RemoteFeedLoader+Helpers.swift",
+			);
+			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
+		};
+		C1B750422F9D639A001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeediOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: FeedPresentation/Feed.strings",
+				EssentialFeed.docc,
+				EssentialFeed.swift,
+				FeedAPI/FeedItemsMapper.swift,
+				"FeedAPI/Helpers/HTTPURLResponse+StatusCode.swift",
+				FeedAPI/HTTPClient.swift,
+				FeedAPI/RemoteFeedImageDataLoader.swift,
+				FeedAPI/RemoteFeedItem.swift,
+				FeedAPI/RemoteFeedLoader.swift,
+				FeedAPI/URLSessionHTTPClient.swift,
+				FeedCache/FeedCachePolicy.swift,
+				FeedCache/FeedImageDataStore.swift,
+				FeedCache/FeedStore.swift,
+				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
+				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
+				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
+				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
+				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
+				FeedCache/LocalFeedImage.swift,
+				FeedCache/LocalFeedImageDataLoader.swift,
+				FeedCache/LocalFeedLoader.swift,
+				FeedFeature/FeedImage.swift,
+				FeedFeature/FeedImageDataLoader.swift,
+				FeedFeature/FeedLoader.swift,
+				FeedPresentation/FeedErrorViewModel.swift,
+				FeedPresentation/FeedImagePresenter.swift,
+				FeedPresentation/FeedImageViewModel.swift,
+				FeedPresentation/FeedLoadingViewModel.swift,
+				FeedPresentation/FeedPresenter.swift,
+				FeedPresentation/FeedViewModel.swift,
+			);
+			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
+		};
+		C1B7504D2F9D6452001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.docc,
+				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
+				FeedUI/Composers/FeedUIComposer.swift,
+				FeedUI/Composers/FeedViewAdapter.swift,
+				FeedUI/Composers/MainQueueDispatchDecorator.swift,
+				FeedUI/Composers/WeakRefVirtualProxy.swift,
+				FeedUI/Controllers/FeedImageCellController.swift,
+				FeedUI/Controllers/FeedViewController.swift,
+				FeedUI/Views/ErrorView.swift,
+				FeedUI/Views/Feed.storyboard,
+				FeedUI/Views/Feed.xcassets,
+				FeedUI/Views/FeedImageCell.swift,
+				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
+				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
+				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1B7504E2F9D6452001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeediOS.xctestplan,
+				"Feed UI/FeedUIIntegrationTests.swift",
+				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
+				"Feed UI/Helpers/FeedViewController+Helpers.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
+				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
+				"Feed UI/Helpers/UIButton+TestHelpers.swift",
+				"Feed UI/Helpers/UIImage+TestHelpers.swift",
+				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1B7504F2F9D6452001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.xctestplan,
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1B750502F9D6452001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: FeedPresentation/Feed.strings",
+				EssentialFeed.docc,
+				EssentialFeed.swift,
+				FeedAPI/FeedItemsMapper.swift,
+				"FeedAPI/Helpers/HTTPURLResponse+StatusCode.swift",
+				FeedAPI/HTTPClient.swift,
+				FeedAPI/RemoteFeedImageDataLoader.swift,
+				FeedAPI/RemoteFeedItem.swift,
+				FeedAPI/RemoteFeedLoader.swift,
+				FeedAPI/URLSessionHTTPClient.swift,
+				FeedCache/FeedCachePolicy.swift,
+				FeedCache/FeedImageDataStore.swift,
+				FeedCache/FeedStore.swift,
+				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
+				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
+				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
+				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
+				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
+				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
+				FeedCache/LocalFeedImage.swift,
+				FeedCache/LocalFeedImageDataLoader.swift,
+				FeedCache/LocalFeedLoader.swift,
+				FeedFeature/FeedImage.swift,
+				FeedFeature/FeedImageDataLoader.swift,
+				FeedFeature/FeedLoader.swift,
+				FeedPresentation/FeedErrorViewModel.swift,
+				FeedPresentation/FeedImagePresenter.swift,
+				FeedPresentation/FeedImageViewModel.swift,
+				FeedPresentation/FeedLoadingViewModel.swift,
+				FeedPresentation/FeedPresenter.swift,
+				FeedPresentation/FeedViewModel.swift,
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1B750592F9D6561001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CI_iOS.xctestplan,
+				CI_macOS.xctestplan,
+				EssentialFeed.xctestplan,
+				EssentialFeedAPIEndToEndTests.xctestplan,
+				EssentialFeedCacheIntegrationTests.xctestplan,
+				FeedAPI/Helpers/HTTPClientSpy.swift,
+				FeedAPI/Helpers/URLProtocolStub.swift,
+				"FeedAPI/Helpers/URLSessionHTTPClient+Helpers.swift",
+				FeedAPI/LoadFeedFromRemoteUseCaseTests.swift,
+				FeedAPI/LoadFeedImageDataFromRemoteUseCaseTests.swift,
+				FeedAPI/URLSessionHTTPClientTests.swift,
+				FeedCache/CacheFeedImageDataUseCaseTests.swift,
+				FeedCache/CacheFeedUseCaseTests.swift,
+				FeedCache/CoreDataFeedImageDataStoreTests.swift,
+				FeedCache/CoreDataFeedStoreTests.swift,
+				FeedCache/FeedStoreSpecs.swift,
+				FeedCache/Helpers/FeedCacheTestHelpers.swift,
+				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
+				FeedCache/Helpers/FeedStoreSpy.swift,
+				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
+				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
+				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
+				FeedCache/ValidateFeedCacheUseCaseTests.swift,
+				FeedPresentation/FeedLocalizationTests.swift,
+				FeedPresentation/FeedPresenterTests.swift,
+				Helpers/LeakChecker.swift,
+				Helpers/SharedTestHelpers.swift,
+				"Helpers/XCTestCase+MemoryLeakTracking.swift",
+			);
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+		};
+		C1B7507B2F9D65CC001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedAPIEndToEndTests.swift,
+				"RemoteFeedLoader+Helpers.swift",
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1B7507C2F9D65CC001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EssentialFeedCacheIntegrationTests.swift,
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C17D36F22F9D31BE002C9FFF /* EssentialFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B750502F9D6452001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedTests" target */,
+				C1B7502C2F9D62D4001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C1B750302F9D631B001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeedCacheIntegrationTests" target */,
+				C1B750362F9D634E001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeediOS" target */,
+				C1B750422F9D639A001D8C9F /* Exceptions for "EssentialFeed" folder in "EssentialFeediOSTests" target */,
+			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
 		};
 		C17D36F52F9D31BE002C9FFF /* EssentialFeedAPIEndToEndTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B7500F2F9D623D001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeed" target */,
+				C1B7507B2F9D65CC001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeedTests" target */,
+				C1B750312F9D631D001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeedCacheIntegrationTests" target */,
+				C1B750372F9D6350001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeediOS" target */,
+				C1B750412F9D639A001D8C9F /* Exceptions for "EssentialFeedAPIEndToEndTests" folder in "EssentialFeediOSTests" target */,
+			);
 			path = EssentialFeedAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
 		C17D36F72F9D31BE002C9FFF /* EssentialFeedCacheIntegrationTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B7500E2F9D623A001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeed" target */,
+				C1B7507C2F9D65CC001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeedTests" target */,
+				C1B7502B2F9D62D4001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C1B750352F9D634E001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeediOS" target */,
+				C1B750402F9D639A001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeediOSTests" target */,
+			);
 			path = EssentialFeedCacheIntegrationTests;
 			sourceTree = "<group>";
 		};
 		C17D370F2F9D31BE002C9FFF /* EssentialFeediOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B750102F9D6245001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeed" target */,
+				C1B7504D2F9D6452001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedTests" target */,
+				C1B7502D2F9D62E2001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C1B750322F9D6323001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeedCacheIntegrationTests" target */,
+				C1B7503D2F9D6399001D8C9F /* Exceptions for "EssentialFeediOS" folder in "EssentialFeediOSTests" target */,
+			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
 		};
 		C17D371C2F9D31BE002C9FFF /* EssentialFeediOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B750112F9D6250001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeed" target */,
+				C1B7504E2F9D6452001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedTests" target */,
+				C1B7502E2F9D62EF001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C1B750332F9D632D001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeedCacheIntegrationTests" target */,
+				C1B750382F9D6362001D8C9F /* Exceptions for "EssentialFeediOSTests" folder in "EssentialFeediOS" target */,
+			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
 		C17D373F2F9D31BE002C9FFF /* EssentialFeedTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1B750592F9D6561001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeed" target */,
+				C1B7504F2F9D6452001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedTests" target */,
+				C1B7502F2F9D62F0001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C1B750342F9D632E001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedCacheIntegrationTests" target */,
+				C1B750392F9D6363001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOS" target */,
+				C1B7503F2F9D639A001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOSTests" target */,
+			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
 		};
@@ -160,6 +843,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1B74EEE2F9D5ED4001D8C9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1B74F1C2F9D5F98001D8C9F /* _Testing_Foundation.framework */,
+				C1B74F1B2F9D5F98001D8C9F /* _Testing_UIKit.framework */,
+				C1B74F1D2F9D5F98001D8C9F /* Testing.framework */,
+				C1B74F1E2F9D5F98001D8C9F /* XCTest.framework */,
+				C1B74F172F9D5F87001D8C9F /* _Testing_CoreImage.framework */,
+				C1B74F072F9D5F61001D8C9F /* _Testing_AppKit.framework */,
+				C1B74F062F9D5F61001D8C9F /* _Testing_Foundation.framework */,
+				C1B74EF82F9D5F37001D8C9F /* _Testing_UIKit.framework */,
+				C1B74EF92F9D5F37001D8C9F /* Testing.framework */,
+				C1B74EF42F9D5F1C001D8C9F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4CDB1052E5A3163007AF2D2 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +869,7 @@
 				C17D370F2F9D31BE002C9FFF /* EssentialFeediOS */,
 				C17D371C2F9D31BE002C9FFF /* EssentialFeediOSTests */,
 				C17D373F2F9D31BE002C9FFF /* EssentialFeedTests */,
+				C1B74EEE2F9D5ED4001D8C9F /* Frameworks */,
 				D4CDB1102E5A3163007AF2D2 /* Products */,
 			);
 			sourceTree = "<group>";

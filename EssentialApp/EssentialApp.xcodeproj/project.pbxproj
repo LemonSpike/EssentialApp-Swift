@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1B74BBB2F9D342B001D8C9F /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B74BB92F9D342B001D8C9F /* EssentialFeed.framework */; };
-		C1B74BBC2F9D342B001D8C9F /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1B74BB92F9D342B001D8C9F /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1B74BBD2F9D342B001D8C9F /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B74BBA2F9D342B001D8C9F /* EssentialFeediOS.framework */; };
-		C1B74BBE2F9D342B001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1B74BBA2F9D342B001D8C9F /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */; };
+		C1B7500C2F9D6189001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C1B74BBF2F9D342B001D8C9F /* Embed Frameworks */ = {
+		C1B7500D2F9D6189001D8C9F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C1B74BBC2F9D342B001D8C9F /* EssentialFeed.framework in Embed Frameworks */,
-				C1B74BBE2F9D342B001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */,
+				C1B7500C2F9D6189001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +48,10 @@
 		C10713BA2F9D2BB5008A0FA6 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74BB92F9D342B001D8C9F /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74BBA2F9D342B001D8C9F /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B74BF42F9D365B001D8C9F /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B74BF52F9D365B001D8C9F /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B750072F9D6189001D8C9F /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -89,8 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1B74BBB2F9D342B001D8C9F /* EssentialFeed.framework in Frameworks */,
-				C1B74BBD2F9D342B001D8C9F /* EssentialFeediOS.framework in Frameworks */,
+				C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +135,10 @@
 		C1B74BB82F9D342B001D8C9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1B750072F9D6189001D8C9F /* EssentialFeed.framework */,
+				C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */,
+				C1B74BF42F9D365B001D8C9F /* EssentialFeed.framework */,
+				C1B74BF52F9D365B001D8C9F /* EssentialFeediOS.framework */,
 				C1B74BB92F9D342B001D8C9F /* EssentialFeed.framework */,
 				C1B74BBA2F9D342B001D8C9F /* EssentialFeediOS.framework */,
 			);
@@ -151,7 +155,7 @@
 				C10713962F9D2BB3008A0FA6 /* Sources */,
 				C10713972F9D2BB3008A0FA6 /* Frameworks */,
 				C10713982F9D2BB3008A0FA6 /* Resources */,
-				C1B74BBF2F9D342B001D8C9F /* Embed Frameworks */,
+				C1B7500D2F9D6189001D8C9F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
