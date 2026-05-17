@@ -1,0 +1,12 @@
+# EditorConfig is awesome: https://EditorConfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+tab_width = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Indent with spaces, tab key inserts spaces in leading whitespace
+# (Most editors will respect indent_style and indent_size for this)
