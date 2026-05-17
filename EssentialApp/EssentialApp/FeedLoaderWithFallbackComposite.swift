@@ -1,6 +1,6 @@
 import EssentialFeed
 
-public class FeedLoaderWithFallbackComposite: FeedLoader {
+nonisolated public class FeedLoaderWithFallbackComposite: FeedLoader {
   
   let primary: FeedLoader
   let fallback: FeedLoader
