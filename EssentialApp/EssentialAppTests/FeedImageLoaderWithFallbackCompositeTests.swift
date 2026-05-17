@@ -103,7 +103,7 @@ final class FeedImageLoaderWithFallbackCompositeTests: XCTestCase {
   ) -> (FeedImageDataLoader, ImageLoaderSpy, ImageLoaderSpy) {
     let primaryLoader = ImageLoaderSpy()
     let fallbackLoader = ImageLoaderSpy()
-    let sut = FeedImageLoaderWithFallbackComposite(
+    let sut = FeedImageDataLoaderWithFallbackComposite(
       primary: primaryLoader,
       fallback: fallbackLoader
     )

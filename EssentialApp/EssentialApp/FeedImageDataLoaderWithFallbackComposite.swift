@@ -1,41 +1,26 @@
 import EssentialFeed
 import Foundation
 
-nonisolated public class FeedImageLoaderWithFallbackComposite: FeedImageDataLoader {
-  let primary: FeedImageDataLoader
-  let fallback: FeedImageDataLoader
+nonisolated public class FeedImageDataLoaderWithFallbackComposite: FeedImageDataLoader {
+  private let primary: FeedImageDataLoader
+  private let fallback: FeedImageDataLoader
   
   public init(primary: FeedImageDataLoader, fallback: FeedImageDataLoader) {
     self.primary = primary
     self.fallback = fallback
   }
   
-  private class FeedImageDataLoaderTaskWrapper: FeedImageDataLoaderTask {
-    private var completion: ((FeedImageDataLoader.Result) -> Void)?
-    
+  private class TaskWrapper: FeedImageDataLoaderTask {
     var wrapped: FeedImageDataLoaderTask?
     
-    init(_ completion: @escaping (FeedImageDataLoader.Result) -> Void) {
-      self.completion = completion
-    }
-    
-    func complete(with result: FeedImageDataLoader.Result) {
-      completion?(result)
-    }
-    
     func cancel() {
-      preventFurtherCompletions()
       wrapped?.cancel()
-    }
-    
-    private func preventFurtherCompletions() {
-      completion = nil
     }
   }
   
   public func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> any FeedImageDataLoaderTask {
     
-    let task =  FeedImageDataLoaderTaskWrapper(completion)
+    let task =  TaskWrapper()
     
     task.wrapped = primary.loadImageData(from: url) { [weak self] result in
       switch result {
