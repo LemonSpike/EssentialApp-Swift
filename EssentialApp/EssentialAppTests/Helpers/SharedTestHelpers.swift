@@ -14,5 +14,5 @@ func anyNSError() -> NSError {
 }
 
 func uniqueFeed() -> [FeedImage] {
-  return [FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())]
+  [FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())]
 }
