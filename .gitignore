@@ -65,3 +65,4 @@ playground.xcworkspace
 # Swift Package Manager
 # Package.resolved
 .DS_Store
+*.xcuserstate
