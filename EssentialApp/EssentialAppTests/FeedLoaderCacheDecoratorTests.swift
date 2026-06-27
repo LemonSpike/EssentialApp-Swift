@@ -63,7 +63,10 @@ class FeedLoaderCacheDecoratorTests: XCTestCase, FeedLoaderTestCase {
       case save([FeedImage])
     }
     
-    func save(_ feed: [EssentialFeed.FeedImage], completion: @escaping (FeedCache.Result) -> ()) {
+    func save(
+      _ feed: [EssentialFeed.FeedImage],
+      completion: @escaping (FeedCache.Result) -> ()
+    ) {
       messages.append(.save(feed))
       completion(.success(()))
     }

@@ -8,14 +8,13 @@ public final class LocalFeedImageDataLoader {
   }
 }
 
-extension LocalFeedImageDataLoader {
-  public typealias SaveResult = Result<Void, Error>
+extension LocalFeedImageDataLoader: FeedImageCache {
   
   public enum SaveError: Error {
     case failed
   }
   
-  public func save(_ data: Data, for url: URL, completion: @escaping (SaveResult) -> Void) {
+  public func save(_ data: Data, for url: URL, completion: @escaping (FeedImageCache.Result) -> Void) {
     store.insert(data, for: url) { [weak self] result in
       guard self != nil else { return }
       
