@@ -2,31 +2,76 @@ import EssentialApp
 import EssentialFeed
 import XCTest
 
-class FeedImageLoaderCacheDecoratorTests: XCTestCase {
+class FeedImageLoaderCacheDecoratorTests: XCTestCase, FeedImageDataLoaderTestCase {
   
-  func test_loadImageData_deliversImageOnLoaderSuccess() {
-    let data = anyData()
-    let (sut, _) = makeSUT(result: .success(data))
+  func test_init_doesNotLoadImageData() {
+    let (_, loader) = makeSUT()
     
-    expect(sut, toCompleteWith: .success(data))
+    XCTAssertTrue(loader.loadedURLs.isEmpty, "Expected no loaded URLs")
+  }
+  
+  func test_loadImageData_loadsFromLoader() {
+    let url = anyURL()
+    let (sut, loader) = makeSUT()
+    
+    _ = sut.loadImageData(from: url) { result in }
+    
+    XCTAssertEqual(
+      loader.loadedURLs,
+      [url],
+      "Expected to load URL from loader"
+    )
+  }
+  
+  func test_cancelLoadImageData_cancelsImageLoaderTask() {
+    let url = anyURL()
+    let (sut, imageLoader) = makeSUT()
+    
+    let task = sut.loadImageData(from: url, completion: { _ in })
+    task.cancel()
+    XCTAssertEqual(imageLoader.cancelledURLs, [url])
+  }
+  
+  func test_cancelLoadImageData_doesNotCache() {
+    let cache = CacheSpy()
+    let url = anyURL()
+    let (sut, _) = makeSUT(
+      cache: cache
+    )
+    
+    let task = sut.loadImageData(from: url, completion: { _ in })
+    task.cancel()
+    XCTAssertTrue(cache.messages.isEmpty)
+  }
+  
+  func test_loadImageData_deliversDataOnLoaderSuccess() {
+    let imageData = anyData()
+    let (sut, loader) = makeSUT()
+    
+    expect(sut, toCompleteWith: .success(imageData), when: {
+      loader.complete(data: imageData)
+    })
   }
   
   func test_loadImageData_deliversErrorOnLoaderFailure() {
-    let (sut, _) = makeSUT(result:  .failure(anyNSError()))
+    let error = anyNSError()
+    let (sut, loader) = makeSUT()
     
-    expect(sut, toCompleteWith: .failure(anyNSError()))
+    expect(sut, toCompleteWith: .failure(error), when: {
+      loader.complete(with: error)
+    })
   }
   
   func test_loadImageData_cachesLoadedDataOnLoaderSuccess() {
     let cache = CacheSpy()
     let data = anyData()
     let url = anyURL()
-    let (sut, _) = makeSUT(
-      result: .success(data),
+    let (sut, loader) = makeSUT(
       cache: cache
     )
     
     _ = sut.loadImageData(from: url) { _ in }
+    loader.complete(data: data)
     
     XCTAssertEqual(
       cache.messages,
@@ -38,12 +83,12 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
   func test_loadImageData_doesNotCacheOnLoaderFailure() {
     let cache = CacheSpy()
     let url = anyURL()
-    let (sut, _) = makeSUT(
-      result: .failure(anyNSError()),
+    let (sut, loader) = makeSUT(
       cache: cache
     )
     
     _ = sut.loadImageData(from: url) { _ in }
+    loader.complete(with: anyNSError())
     
     XCTAssert(
       cache.messages.isEmpty,
@@ -51,51 +96,12 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
     )
   }
   
-  func test_cancelLoadImageData_cancelsImageLoaderTaskWithoutCaching() {
-    let cache = CacheSpy()
-    let url = anyURL()
-    let (sut, imageLoader) = makeSUT(
-      result: .failure(anyNSError()),
-      cache: cache
-    )
-    
-    let task = sut.loadImageData(from: url, completion: { _ in })
-    task.cancel()
-    XCTAssertEqual(imageLoader.cancelledURLs, [url])
-    XCTAssert(cache.messages.isEmpty)
-  }
-  
-  private func expect(
-    _ sut: FeedImageDataLoader,
-    toCompleteWith expectedResult: FeedImageDataLoader.Result,
-    file: StaticString = #file,
-    line: UInt = #line
-  ) {
-    let exp = expectation(description: "Wait for load completion")
-    _ = sut.loadImageData(from: anyURL()) { receivedResult in
-      switch (expectedResult, receivedResult) {
-      case (.success(let data), .success(let receivedData)):
-        XCTAssertEqual(data, receivedData, file: file, line: line)
-        
-      case (.failure, .failure):
-        break
-        
-      default:
-        XCTFail("Expected load image result \(expectedResult), got \(receivedResult) instead", file: file, line: line)
-      }
-      
-      exp.fulfill()
-    }
-    wait(for: [exp], timeout: 0.1)
-  }
-  
   private func makeSUT(
-    result: FeedImageDataLoader.Result,
     cache: CacheSpy = CacheSpy(),
     file: StaticString = #file,
     line: UInt = #line
   ) -> (FeedImageLoaderCacheDecorator, ImageLoaderSpy) {
-    let imageLoader = ImageLoaderSpy(result: result)
+    let imageLoader = ImageLoaderSpy()
     let sut = FeedImageLoaderCacheDecorator(
       decoratee: imageLoader,
       cache: cache
