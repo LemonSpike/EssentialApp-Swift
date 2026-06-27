@@ -6,13 +6,13 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
   
   func test_loadImageData_deliversImageOnLoaderSuccess() {
     let data = anyData()
-    let sut = makeSUT(result: .success(data))
+    let (sut, _) = makeSUT(result: .success(data))
     
     expect(sut, toCompleteWith: .success(data))
   }
   
   func test_loadImageData_deliversErrorOnLoaderFailure() {
-    let sut = makeSUT(result:  .failure(anyNSError()))
+    let (sut, _) = makeSUT(result:  .failure(anyNSError()))
     
     expect(sut, toCompleteWith: .failure(anyNSError()))
   }
@@ -21,7 +21,7 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
     let cache = CacheSpy()
     let data = anyData()
     let url = anyURL()
-    let sut = makeSUT(
+    let (sut, _) = makeSUT(
       result: .success(data),
       cache: cache
     )
@@ -38,7 +38,7 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
   func test_loadImageData_doesNotCacheOnLoaderFailure() {
     let cache = CacheSpy()
     let url = anyURL()
-    let sut = makeSUT(
+    let (sut, _) = makeSUT(
       result: .failure(anyNSError()),
       cache: cache
     )
@@ -49,6 +49,20 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
       cache.messages.isEmpty,
       "Expected to not cache image data on load error"
     )
+  }
+  
+  func test_cancelLoadImageData_cancelsImageLoaderTaskWithoutCaching() {
+    let cache = CacheSpy()
+    let url = anyURL()
+    let (sut, imageLoader) = makeSUT(
+      result: .failure(anyNSError()),
+      cache: cache
+    )
+    
+    let task = sut.loadImageData(from: url, completion: { _ in })
+    task.cancel()
+    XCTAssertEqual(imageLoader.cancelledURLs, [url])
+    XCTAssert(cache.messages.isEmpty)
   }
   
   private func expect(
@@ -80,11 +94,13 @@ class FeedImageLoaderCacheDecoratorTests: XCTestCase {
     cache: CacheSpy = CacheSpy(),
     file: StaticString = #file,
     line: UInt = #line
-  ) -> FeedImageLoaderCacheDecorator {
-    FeedImageLoaderCacheDecorator(
-      decoratee: FeedImageLoaderStub(result: result),
+  ) -> (FeedImageLoaderCacheDecorator, ImageLoaderSpy) {
+    let imageLoader = ImageLoaderSpy(result: result)
+    let sut = FeedImageLoaderCacheDecorator(
+      decoratee: imageLoader,
       cache: cache
     )
+    return (sut, imageLoader)
   }
   
   private class CacheSpy: FeedImageCache {
