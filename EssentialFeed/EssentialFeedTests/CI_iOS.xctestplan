@@ -71,6 +71,14 @@
         "identifier" : "C1417E0F2E76FD210026ACEB",
         "name" : "EssentialFeedAPIEndToEndTests"
       }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/EssentialApp\/EssentialApp.xcodeproj",
+        "identifier" : "C12367072FF14D8E00DAE6F0",
+        "name" : "EssentialAppUIAcceptanceTests"
+      }
     }
   ],
   "version" : 1
