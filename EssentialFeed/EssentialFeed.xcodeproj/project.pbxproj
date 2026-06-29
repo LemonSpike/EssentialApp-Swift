@@ -106,12 +106,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.docc,
-				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedUIComposer.swift,
-				FeedUI/Composers/FeedViewAdapter.swift,
-				FeedUI/Composers/MainQueueDispatchDecorator.swift,
-				FeedUI/Composers/WeakRefVirtualProxy.swift,
 				FeedUI/Controllers/FeedImageCellController.swift,
 				FeedUI/Controllers/FeedViewController.swift,
 				FeedUI/Views/ErrorView.swift,
@@ -129,15 +123,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
-				"Feed UI/FeedUIIntegrationTests.swift",
-				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
-				"Feed UI/Helpers/FeedViewController+Helpers.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
-				"Feed UI/Helpers/UIButton+TestHelpers.swift",
-				"Feed UI/Helpers/UIImage+TestHelpers.swift",
-				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
 		};
@@ -192,12 +177,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.docc,
-				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedUIComposer.swift,
-				FeedUI/Composers/FeedViewAdapter.swift,
-				FeedUI/Composers/MainQueueDispatchDecorator.swift,
-				FeedUI/Composers/WeakRefVirtualProxy.swift,
 				FeedUI/Controllers/FeedImageCellController.swift,
 				FeedUI/Controllers/FeedViewController.swift,
 				FeedUI/Views/ErrorView.swift,
@@ -215,15 +194,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
-				"Feed UI/FeedUIIntegrationTests.swift",
-				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
-				"Feed UI/Helpers/FeedViewController+Helpers.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
-				"Feed UI/Helpers/UIButton+TestHelpers.swift",
-				"Feed UI/Helpers/UIImage+TestHelpers.swift",
-				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
 		};
@@ -308,12 +278,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.docc,
-				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedUIComposer.swift,
-				FeedUI/Composers/FeedViewAdapter.swift,
-				FeedUI/Composers/MainQueueDispatchDecorator.swift,
-				FeedUI/Composers/WeakRefVirtualProxy.swift,
 				FeedUI/Controllers/FeedImageCellController.swift,
 				FeedUI/Controllers/FeedViewController.swift,
 				FeedUI/Views/ErrorView.swift,
@@ -331,15 +295,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
-				"Feed UI/FeedUIIntegrationTests.swift",
-				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
-				"Feed UI/Helpers/FeedViewController+Helpers.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
-				"Feed UI/Helpers/UIButton+TestHelpers.swift",
-				"Feed UI/Helpers/UIImage+TestHelpers.swift",
-				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
 		};
@@ -432,15 +387,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
-				"Feed UI/FeedUIIntegrationTests.swift",
-				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
-				"Feed UI/Helpers/FeedViewController+Helpers.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
-				"Feed UI/Helpers/UIButton+TestHelpers.swift",
-				"Feed UI/Helpers/UIImage+TestHelpers.swift",
-				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
 		};
@@ -482,12 +428,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.docc,
-				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedUIComposer.swift,
-				FeedUI/Composers/FeedViewAdapter.swift,
-				FeedUI/Composers/MainQueueDispatchDecorator.swift,
-				FeedUI/Composers/WeakRefVirtualProxy.swift,
 				FeedUI/Controllers/FeedImageCellController.swift,
 				FeedUI/Controllers/FeedViewController.swift,
 				FeedUI/Views/ErrorView.swift,
@@ -593,12 +533,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.docc,
-				FeedUI/Composers/FeedImageDataLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedLoaderPresentationAdapter.swift,
-				FeedUI/Composers/FeedUIComposer.swift,
-				FeedUI/Composers/FeedViewAdapter.swift,
-				FeedUI/Composers/MainQueueDispatchDecorator.swift,
-				FeedUI/Composers/WeakRefVirtualProxy.swift,
 				FeedUI/Controllers/FeedImageCellController.swift,
 				FeedUI/Controllers/FeedViewController.swift,
 				FeedUI/Views/ErrorView.swift,
@@ -616,15 +550,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
-				"Feed UI/FeedUIIntegrationTests.swift",
-				"Feed UI/Helpers/FeedImageCell+TestHelpers.swift",
-				"Feed UI/Helpers/FeedViewController+Helpers.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Assertions.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+LoaderSpy.swift",
-				"Feed UI/Helpers/FeedViewControllerTests+Localization.swift",
-				"Feed UI/Helpers/UIButton+TestHelpers.swift",
-				"Feed UI/Helpers/UIImage+TestHelpers.swift",
-				"Feed UI/Helpers/UIRefreshControl+TestHelpers.swift",
 			);
 			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
 		};
