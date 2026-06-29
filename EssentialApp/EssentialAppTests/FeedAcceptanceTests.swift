@@ -38,6 +38,22 @@ class FeedAcceptanceTests: XCTestCase {
     XCTAssertEqual(offlineFeed.numberOfRenderedFeedImageViews(), 0)
   }
   
+  func test_onEnteringBackground_deletesExpiredFeedCache() {
+    let store = InMemoryFeedStore.withExpiredFeedCache
+    
+    enterBackground(with: store)
+    
+    XCTAssertNil(store.feedCache, "Expected to delete expired cache")
+  }
+  
+  func test_onEnteringBackground_keepsNonExpiredFeedCache() {
+    let store = InMemoryFeedStore.withNonExpiredFeedCache
+    
+    enterBackground(with: store)
+    
+    XCTAssertNotNil(store.feedCache, "Expected to keep non-expired cache")
+  }
+  
   private func launch(
     httpClient: HTTPClientStub = .offline,
     store: InMemoryFeedStore = .empty
@@ -52,6 +68,14 @@ class FeedAcceptanceTests: XCTestCase {
     feed.simulateAppearance()
     
     return feed
+  }
+  
+  private func enterBackground(with store: InMemoryFeedStore) {
+    let sut = SceneDelegate(
+      httpClient: HTTPClientStub.offline,
+      store: store
+    )
+    sut.sceneWillResignActive(UIApplication.shared.connectedScenes.first!)
   }
   
   private func response(for url: URL) -> (Data, HTTPURLResponse) {

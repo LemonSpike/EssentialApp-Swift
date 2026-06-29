@@ -18,6 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     return try! CoreDataFeedStore(storeURL: localStoreURL)
   }()
   
+  private lazy var localFeedLoader: LocalFeedLoader = {
+    LocalFeedLoader(store: store, currentDate: Date.init)
+  }()
+  
   convenience init(httpClient: HTTPClient, store: FeedStore & FeedImageDataStore) {
     self.init()
     self.httpClient = httpClient
@@ -37,11 +41,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       client: httpClient
     )
     let remoteImageLoader = RemoteFeedImageDataLoader(client: httpClient)
-    
-    let localFeedLoader = LocalFeedLoader(
-      store: store,
-      currentDate: Date.init
-    )
+  
     let localImageLoader = LocalFeedImageDataLoader(store: store)
     
     let compositeFeedLoader = FeedLoaderWithFallbackComposite(
@@ -65,5 +65,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         imageLoader: compositeImageLoader
       )
     )
+  }
+  
+  func sceneWillResignActive(_ scene: UIScene) {
+    localFeedLoader.validateCache { _ in }
   }
 }
