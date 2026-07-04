@@ -115,6 +115,7 @@
 				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
 				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
 				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UITableView+HeaderSizing.swift",
 				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
 			);
 			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
@@ -187,6 +188,7 @@
 				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
 				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
 				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UITableView+HeaderSizing.swift",
 				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
 			);
 			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
@@ -289,6 +291,7 @@
 				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
 				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
 				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UITableView+HeaderSizing.swift",
 				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
 			);
 			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
@@ -441,6 +444,7 @@
 				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
 				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
 				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UITableView+HeaderSizing.swift",
 				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
 			);
 			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
@@ -546,6 +550,7 @@
 				"FeedUI/Views/Helpers/UIImageView+Animations.swift",
 				"FeedUI/Views/Helpers/UIRefreshControl+Helpers.swift",
 				"FeedUI/Views/Helpers/UITableView+Dequeuing.swift",
+				"FeedUI/Views/Helpers/UITableView+HeaderSizing.swift",
 				"FeedUI/Views/Helpers/UIView+Shimmering.swift",
 			);
 			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;

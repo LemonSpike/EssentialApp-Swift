@@ -20,6 +20,12 @@ final public class FeedViewController: UITableViewController, UITableViewDataSou
 
     refresh()
   }
+  
+  public override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    tableView.sizeTableHeaderToFit()
+  }
 
   // MARK: - FeedLoadingView
   @IBAction private func refresh() {
