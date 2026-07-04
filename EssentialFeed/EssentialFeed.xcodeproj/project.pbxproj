@@ -123,6 +123,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
+				FeedSnapshotTests.swift,
 			);
 			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
 		};
@@ -194,6 +195,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
+				FeedSnapshotTests.swift,
 			);
 			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
 		};
@@ -295,6 +297,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
+				FeedSnapshotTests.swift,
 			);
 			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
 		};
@@ -387,6 +390,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
+				FeedSnapshotTests.swift,
 			);
 			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
 		};
@@ -550,6 +554,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
+				FeedSnapshotTests.swift,
 			);
 			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
 		};
