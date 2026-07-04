@@ -125,6 +125,9 @@
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
 				FeedSnapshotTests.swift,
+				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift",
+				"Helpers/XCTestCase+Snapshot.swift",
 			);
 			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
 		};
@@ -198,6 +201,9 @@
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
 				FeedSnapshotTests.swift,
+				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift",
+				"Helpers/XCTestCase+Snapshot.swift",
 			);
 			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
 		};
@@ -301,6 +307,9 @@
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
 				FeedSnapshotTests.swift,
+				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift",
+				"Helpers/XCTestCase+Snapshot.swift",
 			);
 			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
 		};
@@ -394,6 +403,9 @@
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
 				FeedSnapshotTests.swift,
+				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift",
+				"Helpers/XCTestCase+Snapshot.swift",
 			);
 			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
 		};
@@ -560,6 +572,9 @@
 			membershipExceptions = (
 				EssentialFeediOS.xctestplan,
 				FeedSnapshotTests.swift,
+				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift",
+				"Helpers/XCTestCase+Snapshot.swift",
 			);
 			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
 		};
