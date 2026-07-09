@@ -1,5 +1,5 @@
+import EssentialFeedAPI
 import Foundation
-import EssentialFeed
 
 class HTTPClientSpy: HTTPClient {
   private struct Task: HTTPClientTask {

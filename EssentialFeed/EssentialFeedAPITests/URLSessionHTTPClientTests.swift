@@ -1,8 +1,8 @@
+import EssentialFeedAPI
 import Foundation
 import Testing
-import EssentialFeed
 
-@Suite
+@Suite(.serialized)
 class URLSessionHTTPClientTests {
   
   private static let stubs: [(Data?, URLResponse?, Error?)] = [

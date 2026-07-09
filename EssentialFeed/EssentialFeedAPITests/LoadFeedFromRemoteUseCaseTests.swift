@@ -1,6 +1,7 @@
+import EssentialFeed
+import EssentialFeedAPI
 import Foundation
 import Testing
-import EssentialFeed
 
 @Suite
 struct LoadFeedFromRemoteUseCaseTests {

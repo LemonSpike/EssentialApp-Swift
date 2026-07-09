@@ -1,4 +1,4 @@
-import EssentialFeed
+import EssentialFeedAPI
 import Foundation
 import Testing
 
