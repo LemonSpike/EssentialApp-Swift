@@ -1,4 +1,5 @@
 import CoreData
+import EssentialFeedCache
 import Foundation
 
 extension CoreDataFeedStore: FeedStore {

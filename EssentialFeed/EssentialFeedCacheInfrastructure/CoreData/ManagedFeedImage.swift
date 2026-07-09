@@ -1,4 +1,5 @@
 import CoreData
+import EssentialFeedCache
 
 @objc(ManagedFeedImage)
 class ManagedFeedImage: NSManagedObject {

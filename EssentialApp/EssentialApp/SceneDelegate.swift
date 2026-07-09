@@ -2,6 +2,7 @@ import CoreData
 import EssentialFeed
 import EssentialFeedAPI
 import EssentialFeedCache
+import EssentialFeedCacheInfrastructure
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

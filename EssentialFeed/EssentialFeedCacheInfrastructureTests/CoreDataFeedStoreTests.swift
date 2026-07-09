@@ -1,4 +1,5 @@
 import EssentialFeedCache
+import EssentialFeedCacheInfrastructure
 import Foundation
 import XCTest
 
