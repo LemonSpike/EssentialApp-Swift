@@ -1,3 +1,4 @@
+import EssentialFeed
 import Foundation
 
 public final class LocalFeedLoader {

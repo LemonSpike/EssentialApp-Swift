@@ -1,4 +1,4 @@
-import EssentialFeed
+import EssentialFeedCache
 import Foundation
 
 class InMemoryFeedStore {

@@ -15,6 +15,9 @@
 		C19074B62FFFF3D400E93FE4 /* EssentialFeedAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19074AD2FFFF3D300E93FE4 /* EssentialFeedAPI.framework */; };
 		C19074C22FFFF53300E93FE4 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */; };
 		C19074C32FFFF53300E93FE4 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C19074F0300000CE00E93FE4 /* EssentialFeedCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19074E7300000CE00E93FE4 /* EssentialFeedCache.framework */; };
+		C19074FC3000010400E93FE4 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */; };
+		C19074FD3000010400E93FE4 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4CDB11B2E5A3163007AF2D2 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDB10F2E5A3163007AF2D2 /* EssentialFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,20 @@
 			remoteInfo = EssentialFeedAPI;
 		};
 		C19074C42FFFF53300E93FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CDB1062E5A3163007AF2D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4CDB10E2E5A3163007AF2D2;
+			remoteInfo = EssentialFeed;
+		};
+		C19074F1300000CE00E93FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4CDB1062E5A3163007AF2D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19074E6300000CE00E93FE4;
+			remoteInfo = EssentialFeedCache;
+		};
+		C19074FE3000010400E93FE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4CDB1062E5A3163007AF2D2 /* Project object */;
 			proxyType = 1;
@@ -93,6 +110,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19075003000010400E93FE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C19074FD3000010400E93FE4 /* EssentialFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +128,8 @@
 		C14BA59A2EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19074AD2FFFF3D300E93FE4 /* EssentialFeedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19074B52FFFF3D400E93FE4 /* EssentialFeedAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19074E7300000CE00E93FE4 /* EssentialFeedCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeedCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19074EF300000CE00E93FE4 /* EssentialFeedCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74EF42F9D5F1C001D8C9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C1B74EF82F9D5F37001D8C9F /* _Testing_UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = _Testing_UIKit.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/_Testing_UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C1B74EF92F9D5F37001D8C9F /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +155,40 @@
 				"Helpers/XCTestCase+MemoryLeakTracking.swift",
 			);
 			target = C19074B42FFFF3D400E93FE4 /* EssentialFeedAPITests */;
+		};
+		C1907514300005C900E93FE4 /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedCacheTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/LeakChecker.swift,
+				Helpers/SharedTestHelpers.swift,
+				"Helpers/XCTestCase+MemoryLeakTracking.swift",
+			);
+			target = C19074EE300000CE00E93FE4 /* EssentialFeedCacheTests */;
+		};
+		C1907517300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/FeedCacheTestHelpers.swift,
+				Helpers/FeedImageDataStoreSpy.swift,
+				Helpers/FeedStoreSpy.swift,
+				"Helpers/XCTestCase+FeedStoreSpecs.swift",
+			);
+			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
+		};
+		C1907519300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedAPIEndToEndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/FeedCacheTestHelpers.swift,
+				Helpers/FeedStoreSpy.swift,
+			);
+			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
+		};
+		C190751A300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedCacheIntegrationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/FeedCacheTestHelpers.swift,
+			);
+			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
 		};
 		C1B7500E2F9D623A001D8C9F /* Exceptions for "EssentialFeedCacheIntegrationTests" folder in "EssentialFeed" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -183,19 +247,6 @@
 				"/Localized: FeedPresentation/Feed.strings",
 				EssentialFeed.docc,
 				EssentialFeed.swift,
-				FeedCache/FeedCachePolicy.swift,
-				FeedCache/FeedImageDataStore.swift,
-				FeedCache/FeedStore.swift,
-				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
-				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
-				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
-				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
-				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
-				FeedCache/LocalFeedImage.swift,
-				FeedCache/LocalFeedImageDataLoader.swift,
-				FeedCache/LocalFeedLoader.swift,
 				FeedFeature/FeedCache.swift,
 				FeedFeature/FeedImage.swift,
 				FeedFeature/FeedImageCache.swift,
@@ -247,16 +298,6 @@
 				EssentialFeed.xctestplan,
 				EssentialFeedAPIEndToEndTests.xctestplan,
 				EssentialFeedCacheIntegrationTests.xctestplan,
-				FeedCache/CacheFeedImageDataUseCaseTests.swift,
-				FeedCache/CacheFeedUseCaseTests.swift,
-				FeedCache/CoreDataFeedImageDataStoreTests.swift,
-				FeedCache/CoreDataFeedStoreTests.swift,
-				FeedCache/FeedStoreSpecs.swift,
-				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
-				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
-				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
-				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
-				FeedCache/ValidateFeedCacheUseCaseTests.swift,
 				FeedPresentation/FeedLocalizationTests.swift,
 				FeedPresentation/FeedPresenterTests.swift,
 			);
@@ -268,19 +309,6 @@
 				"/Localized: FeedPresentation/Feed.strings",
 				EssentialFeed.docc,
 				EssentialFeed.swift,
-				FeedCache/FeedCachePolicy.swift,
-				FeedCache/FeedImageDataStore.swift,
-				FeedCache/FeedStore.swift,
-				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
-				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
-				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
-				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
-				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
-				FeedCache/LocalFeedImage.swift,
-				FeedCache/LocalFeedImageDataLoader.swift,
-				FeedCache/LocalFeedLoader.swift,
 				FeedFeature/FeedCache.swift,
 				FeedFeature/FeedImage.swift,
 				FeedFeature/FeedImageCache.swift,
@@ -339,17 +367,6 @@
 				CI_macOS.xctestplan,
 				EssentialFeed.xctestplan,
 				EssentialFeedAPIEndToEndTests.xctestplan,
-				FeedCache/CacheFeedImageDataUseCaseTests.swift,
-				FeedCache/CacheFeedUseCaseTests.swift,
-				FeedCache/CoreDataFeedImageDataStoreTests.swift,
-				FeedCache/CoreDataFeedStoreTests.swift,
-				FeedCache/FeedStoreSpecs.swift,
-				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
-				FeedCache/Helpers/FeedStoreSpy.swift,
-				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
-				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
-				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
-				FeedCache/ValidateFeedCacheUseCaseTests.swift,
 				FeedPresentation/FeedLocalizationTests.swift,
 				FeedPresentation/FeedPresenterTests.swift,
 				Helpers/LeakChecker.swift,
@@ -369,19 +386,6 @@
 				"/Localized: FeedPresentation/Feed.strings",
 				EssentialFeed.docc,
 				EssentialFeed.swift,
-				FeedCache/FeedCachePolicy.swift,
-				FeedCache/FeedImageDataStore.swift,
-				FeedCache/FeedStore.swift,
-				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
-				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
-				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
-				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
-				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
-				FeedCache/LocalFeedImage.swift,
-				FeedCache/LocalFeedImageDataLoader.swift,
-				FeedCache/LocalFeedLoader.swift,
 				FeedFeature/FeedCache.swift,
 				FeedFeature/FeedImage.swift,
 				FeedFeature/FeedImageCache.swift,
@@ -423,18 +427,6 @@
 				EssentialFeed.xctestplan,
 				EssentialFeedAPIEndToEndTests.xctestplan,
 				EssentialFeedCacheIntegrationTests.xctestplan,
-				FeedCache/CacheFeedImageDataUseCaseTests.swift,
-				FeedCache/CacheFeedUseCaseTests.swift,
-				FeedCache/CoreDataFeedImageDataStoreTests.swift,
-				FeedCache/CoreDataFeedStoreTests.swift,
-				FeedCache/FeedStoreSpecs.swift,
-				FeedCache/Helpers/FeedCacheTestHelpers.swift,
-				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
-				FeedCache/Helpers/FeedStoreSpy.swift,
-				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
-				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
-				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
-				FeedCache/ValidateFeedCacheUseCaseTests.swift,
 				FeedPresentation/FeedLocalizationTests.swift,
 				FeedPresentation/FeedPresenterTests.swift,
 				Helpers/LeakChecker.swift,
@@ -469,18 +461,6 @@
 				EssentialFeed.xctestplan,
 				EssentialFeedAPIEndToEndTests.xctestplan,
 				EssentialFeedCacheIntegrationTests.xctestplan,
-				FeedCache/CacheFeedImageDataUseCaseTests.swift,
-				FeedCache/CacheFeedUseCaseTests.swift,
-				FeedCache/CoreDataFeedImageDataStoreTests.swift,
-				FeedCache/CoreDataFeedStoreTests.swift,
-				FeedCache/FeedStoreSpecs.swift,
-				FeedCache/Helpers/FeedCacheTestHelpers.swift,
-				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
-				FeedCache/Helpers/FeedStoreSpy.swift,
-				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
-				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
-				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
-				FeedCache/ValidateFeedCacheUseCaseTests.swift,
 				FeedPresentation/FeedLocalizationTests.swift,
 				FeedPresentation/FeedPresenterTests.swift,
 				Helpers/LeakChecker.swift,
@@ -509,19 +489,6 @@
 				"/Localized: FeedPresentation/Feed.strings",
 				EssentialFeed.docc,
 				EssentialFeed.swift,
-				FeedCache/FeedCachePolicy.swift,
-				FeedCache/FeedImageDataStore.swift,
-				FeedCache/FeedStore.swift,
-				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
-				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
-				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
-				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
-				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
-				FeedCache/LocalFeedImage.swift,
-				FeedCache/LocalFeedImageDataLoader.swift,
-				FeedCache/LocalFeedLoader.swift,
 				FeedFeature/FeedCache.swift,
 				FeedFeature/FeedImage.swift,
 				FeedFeature/FeedImageCache.swift,
@@ -578,19 +545,6 @@
 				"/Localized: FeedPresentation/Feed.strings",
 				EssentialFeed.docc,
 				EssentialFeed.swift,
-				FeedCache/FeedCachePolicy.swift,
-				FeedCache/FeedImageDataStore.swift,
-				FeedCache/FeedStore.swift,
-				FeedCache/Infrastructure/CoreData/CoreDataFeedStore.swift,
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
-				"FeedCache/Infrastructure/CoreData/CoreDataFeedStore+FeedStore.swift",
-				FeedCache/Infrastructure/CoreData/CoreDataHelpers.swift,
-				FeedCache/Infrastructure/CoreData/FeedStore.xcdatamodeld,
-				FeedCache/Infrastructure/CoreData/ManagedCache.swift,
-				FeedCache/Infrastructure/CoreData/ManagedFeedImage.swift,
-				FeedCache/LocalFeedImage.swift,
-				FeedCache/LocalFeedImageDataLoader.swift,
-				FeedCache/LocalFeedLoader.swift,
 				FeedFeature/FeedCache.swift,
 				FeedFeature/FeedImage.swift,
 				FeedFeature/FeedImageCache.swift,
@@ -613,18 +567,6 @@
 				EssentialFeed.xctestplan,
 				EssentialFeedAPIEndToEndTests.xctestplan,
 				EssentialFeedCacheIntegrationTests.xctestplan,
-				FeedCache/CacheFeedImageDataUseCaseTests.swift,
-				FeedCache/CacheFeedUseCaseTests.swift,
-				FeedCache/CoreDataFeedImageDataStoreTests.swift,
-				FeedCache/CoreDataFeedStoreTests.swift,
-				FeedCache/FeedStoreSpecs.swift,
-				FeedCache/Helpers/FeedCacheTestHelpers.swift,
-				FeedCache/Helpers/FeedImageDataStoreSpy.swift,
-				FeedCache/Helpers/FeedStoreSpy.swift,
-				"FeedCache/Helpers/XCTestCase+FeedStoreSpecs.swift",
-				FeedCache/LoadFeedFromCacheUseCaseTests.swift,
-				FeedCache/LoadFeedImageDataFromCacheUseCaseTests.swift,
-				FeedCache/ValidateFeedCacheUseCaseTests.swift,
 				FeedPresentation/FeedLocalizationTests.swift,
 				FeedPresentation/FeedPresenterTests.swift,
 				Helpers/LeakChecker.swift,
@@ -716,11 +658,12 @@
 			exceptions = (
 				C1B750592F9D6561001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeed" target */,
 				C1B7504F2F9D6452001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedTests" target */,
+				C1907514300005C900E93FE4 /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedCacheTests" target */,
+				C19074D92FFFF91C00E93FE4 /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedAPITests" target */,
 				C1B7502F2F9D62F0001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedAPIEndToEndTests" target */,
 				C1B750342F9D632E001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedCacheIntegrationTests" target */,
 				C1B750392F9D6363001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOS" target */,
 				C1B7503F2F9D639A001D8C9F /* Exceptions for "EssentialFeedTests" folder in "EssentialFeediOSTests" target */,
-				C19074D92FFFF91C00E93FE4 /* Exceptions for "EssentialFeedTests" folder in "EssentialFeedAPITests" target */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -733,6 +676,21 @@
 		C19074B92FFFF3D400E93FE4 /* EssentialFeedAPITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = EssentialFeedAPITests;
+			sourceTree = "<group>";
+		};
+		C19074E8300000CE00E93FE4 /* EssentialFeedCache */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EssentialFeedCache;
+			sourceTree = "<group>";
+		};
+		C19074F3300000CE00E93FE4 /* EssentialFeedCacheTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1907517300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedTests" target */,
+				C1907519300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedAPIEndToEndTests" target */,
+				C190751A300005F200E93FE4 /* Exceptions for "EssentialFeedCacheTests" folder in "EssentialFeedCacheIntegrationTests" target */,
+			);
+			path = EssentialFeedCacheTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -767,6 +725,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19074B62FFFF3D400E93FE4 /* EssentialFeedAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074E4300000CE00E93FE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19074FC3000010400E93FE4 /* EssentialFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074EC300000CE00E93FE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19074F0300000CE00E93FE4 /* EssentialFeedCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +803,8 @@
 				C19074AE2FFFF3D300E93FE4 /* EssentialFeedAPI */,
 				C19074B92FFFF3D400E93FE4 /* EssentialFeedAPITests */,
 				C17D36F52F9D31BE002C9FFF /* EssentialFeedAPIEndToEndTests */,
+				C19074E8300000CE00E93FE4 /* EssentialFeedCache */,
+				C19074F3300000CE00E93FE4 /* EssentialFeedCacheTests */,
 				C17D36F72F9D31BE002C9FFF /* EssentialFeedCacheIntegrationTests */,
 				C17D370F2F9D31BE002C9FFF /* EssentialFeediOS */,
 				C17D371C2F9D31BE002C9FFF /* EssentialFeediOSTests */,
@@ -848,6 +824,8 @@
 				D4D022AC2EE4DAA4003EEF59 /* EssentialFeediOSTests.xctest */,
 				C19074AD2FFFF3D300E93FE4 /* EssentialFeedAPI.framework */,
 				C19074B52FFFF3D400E93FE4 /* EssentialFeedAPITests.xctest */,
+				C19074E7300000CE00E93FE4 /* EssentialFeedCache.framework */,
+				C19074EF300000CE00E93FE4 /* EssentialFeedCacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -856,6 +834,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		C19074A82FFFF3D300E93FE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074E2300000CE00E93FE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -981,6 +966,54 @@
 			);
 			productName = EssentialFeedAPITests;
 			productReference = C19074B52FFFF3D400E93FE4 /* EssentialFeedAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C19074E6300000CE00E93FE4 /* EssentialFeedCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19074F6300000CE00E93FE4 /* Build configuration list for PBXNativeTarget "EssentialFeedCache" */;
+			buildPhases = (
+				C19074E2300000CE00E93FE4 /* Headers */,
+				C19074E3300000CE00E93FE4 /* Sources */,
+				C19074E4300000CE00E93FE4 /* Frameworks */,
+				C19074E5300000CE00E93FE4 /* Resources */,
+				C19075003000010400E93FE4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19074FF3000010400E93FE4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C19074E8300000CE00E93FE4 /* EssentialFeedCache */,
+			);
+			name = EssentialFeedCache;
+			packageProductDependencies = (
+			);
+			productName = EssentialFeedCache;
+			productReference = C19074E7300000CE00E93FE4 /* EssentialFeedCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C19074EE300000CE00E93FE4 /* EssentialFeedCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19074F9300000CE00E93FE4 /* Build configuration list for PBXNativeTarget "EssentialFeedCacheTests" */;
+			buildPhases = (
+				C19074EB300000CE00E93FE4 /* Sources */,
+				C19074EC300000CE00E93FE4 /* Frameworks */,
+				C19074ED300000CE00E93FE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19074F2300000CE00E93FE4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C19074F3300000CE00E93FE4 /* EssentialFeedCacheTests */,
+			);
+			name = EssentialFeedCacheTests;
+			packageProductDependencies = (
+			);
+			productName = EssentialFeedCacheTests;
+			productReference = C19074EF300000CE00E93FE4 /* EssentialFeedCacheTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */ = {
@@ -1119,6 +1152,12 @@
 					C19074B42FFFF3D400E93FE4 = {
 						CreatedOnToolsVersion = 26.6;
 					};
+					C19074E6300000CE00E93FE4 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					C19074EE300000CE00E93FE4 = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					D4CDB10E2E5A3163007AF2D2 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -1152,12 +1191,14 @@
 			targets = (
 				D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */,
 				D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */,
+				C19074E6300000CE00E93FE4 /* EssentialFeedCache */,
+				C19074EE300000CE00E93FE4 /* EssentialFeedCacheTests */,
+				C19074AC2FFFF3D300E93FE4 /* EssentialFeedAPI */,
+				C19074B42FFFF3D400E93FE4 /* EssentialFeedAPITests */,
 				C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */,
 				C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */,
-				C19074AC2FFFF3D300E93FE4 /* EssentialFeedAPI */,
 				D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */,
 				D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */,
-				C19074B42FFFF3D400E93FE4 /* EssentialFeedAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1185,6 +1226,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C19074B32FFFF3D400E93FE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074E5300000CE00E93FE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074ED300000CE00E93FE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1250,6 +1305,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C19074E3300000CE00E93FE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19074EB300000CE00E93FE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4CDB10B2E5A3163007AF2D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1306,6 +1375,16 @@
 			isa = PBXTargetDependency;
 			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
 			targetProxy = C19074C42FFFF53300E93FE4 /* PBXContainerItemProxy */;
+		};
+		C19074F2300000CE00E93FE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19074E6300000CE00E93FE4 /* EssentialFeedCache */;
+			targetProxy = C19074F1300000CE00E93FE4 /* PBXContainerItemProxy */;
+		};
+		C19074FF3000010400E93FE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4CDB10E2E5A3163007AF2D2 /* EssentialFeed */;
+			targetProxy = C19074FE3000010400E93FE4 /* PBXContainerItemProxy */;
 		};
 		D4CDB11D2E5A3163007AF2D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1498,7 +1577,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -1522,7 +1601,143 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		C19074F7300000CE00E93FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.EssentialFeedCache;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		C19074F8300000CE00E93FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.EssentialFeedCache;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		C19074FA300000CE00E93FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.EssentialFeedCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		C19074FB300000CE00E93FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasprasols.EssentialFeedCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -1934,6 +2149,24 @@
 			buildConfigurations = (
 				C19074BE2FFFF3D400E93FE4 /* Debug */,
 				C19074BF2FFFF3D400E93FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19074F6300000CE00E93FE4 /* Build configuration list for PBXNativeTarget "EssentialFeedCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19074F7300000CE00E93FE4 /* Debug */,
+				C19074F8300000CE00E93FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19074F9300000CE00E93FE4 /* Build configuration list for PBXNativeTarget "EssentialFeedCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19074FA300000CE00E93FE4 /* Debug */,
+				C19074FB300000CE00E93FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

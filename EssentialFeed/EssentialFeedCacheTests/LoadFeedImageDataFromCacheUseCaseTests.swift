@@ -1,5 +1,6 @@
-import XCTest
 import EssentialFeed
+import EssentialFeedCache
+import XCTest
 
 class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
 

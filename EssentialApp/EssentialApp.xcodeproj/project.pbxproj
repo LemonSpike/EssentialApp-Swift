@@ -11,6 +11,8 @@
 		C19074DE2FFFFCF600E93FE4 /* EssentialFeedAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19074DC2FFFFCF600E93FE4 /* EssentialFeedAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C19074E02FFFFCFA00E93FE4 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19074DF2FFFFCFA00E93FE4 /* EssentialFeed.framework */; };
 		C19074E12FFFFCFA00E93FE4 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19074DF2FFFFCFA00E93FE4 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C19075113000029C00E93FE4 /* EssentialFeedCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19075103000029C00E93FE4 /* EssentialFeedCache.framework */; };
+		C19075123000029C00E93FE4 /* EssentialFeedCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19075103000029C00E93FE4 /* EssentialFeedCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */; };
 		C1B7500C2F9D6189001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -32,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C19075123000029C00E93FE4 /* EssentialFeedCache.framework in Embed Frameworks */,
 				C19074DE2FFFFCF600E93FE4 /* EssentialFeedAPI.framework in Embed Frameworks */,
 				C19074E12FFFFCFA00E93FE4 /* EssentialFeed.framework in Embed Frameworks */,
 				C1B7500C2F9D6189001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */,
@@ -46,6 +49,7 @@
 		C10713B02F9D2BB5008A0FA6 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19074DC2FFFFCF600E93FE4 /* EssentialFeedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19074DF2FFFFCFA00E93FE4 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19075103000029C00E93FE4 /* EssentialFeedCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeedCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74BB92F9D342B001D8C9F /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74BBA2F9D342B001D8C9F /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B74BF42F9D365B001D8C9F /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19075113000029C00E93FE4 /* EssentialFeedCache.framework in Frameworks */,
 				C19074DD2FFFFCF600E93FE4 /* EssentialFeedAPI.framework in Frameworks */,
 				C19074E02FFFFCFA00E93FE4 /* EssentialFeed.framework in Frameworks */,
 				C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */,
@@ -123,6 +128,7 @@
 		C1B74BB82F9D342B001D8C9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C19075103000029C00E93FE4 /* EssentialFeedCache.framework */,
 				C19074DF2FFFFCFA00E93FE4 /* EssentialFeed.framework */,
 				C19074DC2FFFFCF600E93FE4 /* EssentialFeedAPI.framework */,
 				C1B750072F9D6189001D8C9F /* EssentialFeed.framework */,

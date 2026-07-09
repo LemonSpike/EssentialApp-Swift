@@ -1,4 +1,5 @@
 import EssentialFeed
+import EssentialFeedCache
 import XCTest
 
 final class LoadFeedFromCacheUseCaseTests: XCTestCase {

@@ -1,5 +1,5 @@
+import EssentialFeedCache
 import Foundation
-import EssentialFeed
 
 class FeedImageDataStoreSpy: FeedImageDataStore {
 	enum Message: Equatable {
