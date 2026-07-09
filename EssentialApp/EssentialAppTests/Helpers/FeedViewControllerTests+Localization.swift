@@ -1,4 +1,4 @@
-import EssentialFeed
+import EssentialFeedPresentation
 import Foundation
 import XCTest
 

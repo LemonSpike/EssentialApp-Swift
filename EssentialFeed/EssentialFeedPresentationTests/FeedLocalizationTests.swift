@@ -1,5 +1,5 @@
 import XCTest
-import EssentialFeed
+import EssentialFeedPresentation
 
 final class FeedLocalizationTests: XCTestCase {
   

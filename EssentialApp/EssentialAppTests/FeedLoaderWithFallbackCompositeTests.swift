@@ -1,6 +1,6 @@
-import XCTest
-import EssentialFeed
 import EssentialApp
+import EssentialFeed
+import XCTest
 
 final class FeedLoaderWithFallbackCompositeTests: XCTestCase, FeedLoaderTestCase {
   

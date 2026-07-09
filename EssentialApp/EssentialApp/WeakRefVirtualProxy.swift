@@ -1,5 +1,5 @@
-import EssentialFeed
 import EssentialFeediOS
+import EssentialFeedPresentation
 import UIKit
 
 final class WeakRefVirtualProxy<T: AnyObject> {

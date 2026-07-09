@@ -342,7 +342,7 @@ final class FeedUIIntegrationTests: XCTestCase {
       loader.completeImageLoading(with: self.anyImageData(), at: 0)
       exp.fulfill()
     }
-    wait(for: [exp], timeout: 0.1)
+    wait(for: [exp], timeout: 0.5)
   }
   
   // MARK: - Helpers

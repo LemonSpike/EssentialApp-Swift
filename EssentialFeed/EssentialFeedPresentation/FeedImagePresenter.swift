@@ -1,3 +1,4 @@
+import EssentialFeed
 import Foundation
 
 public protocol FeedImageView {

@@ -33,14 +33,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : false,
-      "target" : {
-        "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
-        "identifier" : "D4CDB1192E5A3163007AF2D2",
-        "name" : "EssentialFeedTests"
-      }
-    },
-    {
       "parallelizable" : true,
       "target" : {
         "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",

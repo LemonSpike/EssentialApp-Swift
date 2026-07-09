@@ -1,4 +1,5 @@
 import EssentialFeed
+import EssentialFeedPresentation
 import XCTest
 
 class FeedPresenterTests: XCTestCase {

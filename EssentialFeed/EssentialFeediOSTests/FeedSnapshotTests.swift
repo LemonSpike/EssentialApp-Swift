@@ -1,4 +1,4 @@
-@testable import EssentialFeed
+@testable import EssentialFeedPresentation
 import EssentialFeediOS
 import XCTest
 

@@ -1,7 +1,7 @@
+@testable import EssentialApp
 import EssentialFeed
 import EssentialFeediOS
 import XCTest
-@testable import EssentialApp
 
 class FeedAcceptanceTests: XCTestCase {
   
