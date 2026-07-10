@@ -1,6 +1,7 @@
 import CoreData
 import EssentialFeed
 import EssentialFeedAPI
+import EssentialFeedAPIInfrastructure
 import EssentialFeedCache
 import EssentialFeedCacheInfrastructure
 import UIKit

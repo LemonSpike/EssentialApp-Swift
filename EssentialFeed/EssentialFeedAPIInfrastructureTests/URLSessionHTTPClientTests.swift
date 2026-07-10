@@ -1,4 +1,5 @@
 import EssentialFeedAPI
+import EssentialFeedAPIInfrastructure
 import Foundation
 import Testing
 

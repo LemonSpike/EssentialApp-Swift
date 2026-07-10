@@ -1,3 +1,4 @@
+import EssentialFeedAPI
 import Foundation
 
 public final class URLSessionHTTPClient: HTTPClient {
