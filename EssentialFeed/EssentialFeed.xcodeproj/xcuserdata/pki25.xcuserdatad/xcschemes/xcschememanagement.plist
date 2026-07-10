@@ -19,15 +19,40 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>EssentialFeedAPI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>EssentialFeedAPIEndToEndTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>EssentialFeedAPIInfrastructure.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>EssentialFeedCache.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>EssentialFeedCacheInfrastructure.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>EssentialFeedCacheIntegrationTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>EssentialFeedPresentation.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>EssentialFeediOS.xcscheme_^#shared#^_</key>
 		<dict>
@@ -43,6 +68,56 @@
 			<true/>
 		</dict>
 		<key>C14BA5992EB693FD00F926A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19074AC2FFFF3D300E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19074B42FFFF3D400E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19074E6300000CE00E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19074EE300000CE00E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C190752B30001C5100E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C190753330001C5100E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1907568300022CF00E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C1907570300022D000E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19075BC3000C79C00E93FE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C19075C43000C79C00E93FE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
