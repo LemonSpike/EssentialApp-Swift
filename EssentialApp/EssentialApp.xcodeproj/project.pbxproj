@@ -15,8 +15,6 @@
 		C19075123000029C00E93FE4 /* EssentialFeedCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19075103000029C00E93FE4 /* EssentialFeedCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C190754B30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C190754A30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework */; };
 		C190754C30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C190754A30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C19075A13000288B00E93FE4 /* EssentialFeedPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19075A03000288B00E93FE4 /* EssentialFeedPresentation.framework */; };
-		C19075A23000288B00E93FE4 /* EssentialFeedPresentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19075A03000288B00E93FE4 /* EssentialFeedPresentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C19075E83000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19075E73000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework */; };
 		C19075E93000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C19075E73000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B750082F9D6189001D8C9F /* EssentialFeediOS.framework */; };
@@ -44,7 +42,6 @@
 				C19074DE2FFFFCF600E93FE4 /* EssentialFeedAPI.framework in Embed Frameworks */,
 				C190754C30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework in Embed Frameworks */,
 				C19075E93000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework in Embed Frameworks */,
-				C19075A23000288B00E93FE4 /* EssentialFeedPresentation.framework in Embed Frameworks */,
 				C19074E12FFFFCFA00E93FE4 /* EssentialFeed.framework in Embed Frameworks */,
 				C1B7500C2F9D6189001D8C9F /* EssentialFeediOS.framework in Embed Frameworks */,
 			);
@@ -105,7 +102,6 @@
 				C19074DD2FFFFCF600E93FE4 /* EssentialFeedAPI.framework in Frameworks */,
 				C190754B30001DC900E93FE4 /* EssentialFeedCacheInfrastructure.framework in Frameworks */,
 				C19075E83000CA2D00E93FE4 /* EssentialFeedAPIInfrastructure.framework in Frameworks */,
-				C19075A13000288B00E93FE4 /* EssentialFeedPresentation.framework in Frameworks */,
 				C19074E02FFFFCFA00E93FE4 /* EssentialFeed.framework in Frameworks */,
 				C1B7500B2F9D6189001D8C9F /* EssentialFeediOS.framework in Frameworks */,
 			);

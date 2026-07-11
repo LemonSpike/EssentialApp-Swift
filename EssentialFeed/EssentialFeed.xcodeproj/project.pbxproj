@@ -407,12 +407,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeed.docc,
-				EssentialFeed.swift,
-				FeedFeature/FeedCache.swift,
-				FeedFeature/FeedImage.swift,
-				FeedFeature/FeedImageCache.swift,
-				FeedFeature/FeedImageDataLoader.swift,
-				FeedFeature/FeedLoader.swift,
+				FeedCache.swift,
+				FeedImage.swift,
+				FeedImageCache.swift,
+				FeedImageDataLoader.swift,
+				FeedLoader.swift,
 			);
 			target = C1417E0F2E76FD210026ACEB /* EssentialFeedAPIEndToEndTests */;
 		};
@@ -459,12 +458,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeed.docc,
-				EssentialFeed.swift,
-				FeedFeature/FeedCache.swift,
-				FeedFeature/FeedImage.swift,
-				FeedFeature/FeedImageCache.swift,
-				FeedFeature/FeedImageDataLoader.swift,
-				FeedFeature/FeedLoader.swift,
+				FeedCache.swift,
+				FeedImage.swift,
+				FeedImageCache.swift,
+				FeedImageDataLoader.swift,
+				FeedLoader.swift,
 			);
 			target = C14BA5992EB693FD00F926A1 /* EssentialFeedCacheIntegrationTests */;
 		};
@@ -526,12 +524,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeed.docc,
-				EssentialFeed.swift,
-				FeedFeature/FeedCache.swift,
-				FeedFeature/FeedImage.swift,
-				FeedFeature/FeedImageCache.swift,
-				FeedFeature/FeedImageDataLoader.swift,
-				FeedFeature/FeedLoader.swift,
+				FeedCache.swift,
+				FeedImage.swift,
+				FeedImageCache.swift,
+				FeedImageDataLoader.swift,
+				FeedLoader.swift,
 			);
 			target = D4D022A12EE4DAA4003EEF59 /* EssentialFeediOS */;
 		};
@@ -616,12 +613,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeed.docc,
-				EssentialFeed.swift,
-				FeedFeature/FeedCache.swift,
-				FeedFeature/FeedImage.swift,
-				FeedFeature/FeedImageCache.swift,
-				FeedFeature/FeedImageDataLoader.swift,
-				FeedFeature/FeedLoader.swift,
+				FeedCache.swift,
+				FeedImage.swift,
+				FeedImageCache.swift,
+				FeedImageDataLoader.swift,
+				FeedLoader.swift,
 			);
 			target = D4D022AB2EE4DAA4003EEF59 /* EssentialFeediOSTests */;
 		};
@@ -665,12 +661,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EssentialFeed.docc,
-				EssentialFeed.swift,
-				FeedFeature/FeedCache.swift,
-				FeedFeature/FeedImage.swift,
-				FeedFeature/FeedImageCache.swift,
-				FeedFeature/FeedImageDataLoader.swift,
-				FeedFeature/FeedLoader.swift,
+				FeedCache.swift,
+				FeedImage.swift,
+				FeedImageCache.swift,
+				FeedImageDataLoader.swift,
+				FeedLoader.swift,
 			);
 			target = D4CDB1192E5A3163007AF2D2 /* EssentialFeedTests */;
 		};
